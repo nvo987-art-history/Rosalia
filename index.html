@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Rosalía Code | Cultural Theory of Attention | NVO987</title>
+
+<meta name="description"
+content="The Rosalía Code is a cultural theory proposing that meaning in modern visual systems emerges not from stable centers but from the rhythmic reconfiguration of attention.">
+
+<meta name="keywords"
+content="Rosalía Code,Cultural Theory,Attention Theory,Visual Culture,Contemporary Culture,NVO987,Sonia Delaunay,Attention Studies">
+
+<meta name="author"
+content="Nicholas Van-Orton">
+
+<meta name="robots"
+content="index,follow">
+
+<link rel="canonical"
+href="https://rosaliacode.nvo987.us">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:title"
+content="The Rosalía Code">
+
+<meta property="og:description"
+content="A Cultural Theory of the Rhythmic Reconfiguration of Attention">
+
+<meta property="og:url"
+content="https://rosaliacode.nvo987.us">
+
+<meta property="og:site_name"
+content="NVO987">
+
+<meta name="theme-color"
+content="#050505">
+
+<link rel="icon"
+href="/favicon.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+
+--gold:#d4af37;
+--gold-soft:#f3d46a;
+--gold-dark:#8f6b14;
+
+--bg:#050505;
+--bg-soft:#0b0b0b;
+--panel:rgba(255,255,255,.03);
+
+--text:#f3f3f3;
+--muted:#b9b9b9;
+
+--border:rgba(212,175,55,.18);
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,
+body{
+width:100%;
+max-width:100%;
+overflow-x:hidden;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+radial-gradient(
+circle at top,
+rgba(212,175,55,.08),
+transparent 35%),
+
+linear-gradient(
+180deg,
+#090909 0%,
+#050505 100%);
+
+color:var(--text);
+
+font-family:
+'Cormorant Garamond',
+serif;
+
+min-height:100vh;
+
+position:relative;
+
+}
+
+body::before{
+
+content:'';
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+background:
+
+linear-gradient(
+rgba(255,255,255,.01) 1px,
+transparent 1px);
+
+background-size:100% 4px;
+
+opacity:.25;
+
+}
+
+.container{
+
+width:min(92%,1200px);
+
+margin:auto;
+
+max-width:100%;
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:80px 20px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::after{
+
+content:'';
+
+position:absolute;
+
+width:min(700px,70vw);
+height:min(700px,70vw);
+
+border-radius:50%;
+
+background:
+radial-gradient(
+circle,
+rgba(212,175,55,.12),
+transparent 70%);
+
+filter:blur(60px);
+
+z-index:-1;
+
+left:50%;
+top:50%;
+
+transform:
+translate(-50%,-50%);
+
+}
+
+.hero-content{
+
+max-width:1100px;
+
+width:100%;
+
+padding-left:20px;
+padding-right:20px;
+
+}
+
+.identity-label{
+
+color:var(--gold);
+
+font-size:1rem;
+
+letter-spacing:.35em;
+
+text-transform:uppercase;
+
+margin-bottom:35px;
+
+word-break:break-word;
+
+}
+
+.hero h1{
+
+font-family:
+'Playfair Display',
+serif;
+
+font-size:
+clamp(3rem,9vw,8rem);
+
+font-weight:700;
+
+line-height:1.05;
+
+margin-bottom:25px;
+
+word-break:break-word;
+
+background:
+linear-gradient(
+180deg,
+#fff8d0 0%,
+#f3d46a 40%,
+#d4af37 70%,
+#8f6b14 100%);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero h2{
+
+font-size:
+clamp(1.2rem,2vw,2rem);
+
+font-weight:400;
+
+color:#e8dcb0;
+
+letter-spacing:.05em;
+
+margin-bottom:40px;
+
+word-break:break-word;
+
+}
+
+.hero p{
+
+max-width:950px;
+
+margin:auto;
+
+font-size:1.55rem;
+
+line-height:1.9;
+
+color:#d7d7d7;
+
+word-wrap:break-word;
+
+overflow-wrap:break-word;
+
+}
+
+.overview{
+
+padding:120px 0;
+
+overflow:hidden;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-family:
+'Playfair Display',
+serif;
+
+font-size:
+clamp(2.2rem,5vw,4.5rem);
+
+margin-bottom:70px;
+
+padding-left:10px;
+padding-right:10px;
+
+background:
+linear-gradient(
+180deg,
+#fff8d0,
+#d4af37);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.panel{
+
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.04),
+rgba(255,255,255,.015));
+
+border:1px solid var(--border);
+
+border-radius:30px;
+
+padding:50px;
+
+backdrop-filter:blur(18px);
+
+margin-bottom:40px;
+
+max-width:100%;
+
+overflow:hidden;
+
+}
+
+.panel h3{
+
+font-size:2rem;
+
+color:#fff4c3;
+
+margin-bottom:25px;
+
+word-break:break-word;
+
+}
+
+.panel p{
+
+font-size:1.35rem;
+
+line-height:1.9;
+
+color:#d4d4d4;
+
+margin-bottom:20px;
+
+word-wrap:break-word;
+
+overflow-wrap:break-word;
+
+}
+
+a{
+
+color:var(--gold-soft);
+
+text-decoration:none;
+
+word-break:break-word;
+
+}
+
+a:hover{
+
+color:white;
+
+}
+
+img,
+video,
+iframe{
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:60px 16px;
+
+}
+
+.hero p{
+
+font-size:1.2rem;
+
+}
+
+.panel{
+
+padding:28px;
+
+border-radius:22px;
+
+}
+
+.identity-label{
+
+letter-spacing:.18em;
+
+font-size:.9rem;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="identity-label">
+NVO987 · CULTURAL THEORY SERIES
+</div>
+
+<h1>
+THE ROSALÍA CODE
+</h1>
+
+<h2>
+A Cultural Theory of the Rhythmic Reconfiguration of Attention
+</h2>
+
+<p>
+
+Meaning no longer emerges from a stable center.
+
+It emerges through the movement of attention.
+
+The Rosalía Code proposes that modern visual systems are organized not around fixed hierarchies, but around rhythms of concentration, dispersion and reconfiguration.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+Abstract
+</h2>
+
+<div class="panel">
+
+<p>
+
+The cultural systems of the 20th century were largely organized around stable centers. The political leader, the main figure in a work of art, the media personality, or the protagonist of a narrative occupied a privileged position to which attention continually returned.
+
+</p>
+
+<p>
+
+In the visual culture of the 21st century, however, a different organizing logic can increasingly be observed. Meaning no longer emerges from a single center, but from the continuous movement of attention.
+
+</p>
+
+<p>
+
+The Rosalía Code is a theoretical model of this phenomenon. Its fundamental assumption is that in modern visual systems, cultural meaning emerges through the rhythmic reconfiguration of attention. The center is no longer a fixed location, but a dynamically reproduced relationship.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+1. The Crisis of the Center
+</h2>
+
+<div class="panel">
+
+<p>
+
+Classical systems of representation were hierarchical in structure. Painting was organized around a central figure, theater was built around a protagonist, and political communication was arranged around clearly defined leadership figures.
+
+</p>
+
+<p>
+
+In these systems, the direction of meaning was clear:
+
+</p>
+
+<p style="text-align:center;font-size:2rem;color:#f3d46a;">
+Center → Periphery
+</p>
+
+<p>
+
+The primary function of attention was to identify the central element.
+
+</p>
+
+<p>
+
+With the development of digital and visual culture, however, the structure of attention changed. The center lost its exclusive role. Meaning is increasingly less concentrated in a single element and increasingly emerges within a network of relationships.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+2. The Core Principle of the Rosalía Code
+</h2>
+
+<div class="panel">
+
+<p>
+
+According to the Rosalía Code, modern cultural systems are organized not around stable centers but around rhythms of attention.
+
+</p>
+
+<p>
+
+Attention does not remain fixed.
+
+</p>
+
+<p style="font-size:1.6rem;color:#f3d46a;text-align:center;">
+
+It circulates.<br>
+It moves away.<br>
+It returns.<br>
+It creates new relationships.
+
+</p>
+
+<p>
+
+The coherence of the system derives not from the permanence of the center but from the organization of movement.
+
+</p>
+
+<p>
+
+In this sense, the center is not a place but a function.
+
+</p>
+
+<p>
+
+It always exists, but it continually appears in new positions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+3. The Model of Rhythmic Attention
+</h2>
+
+<div class="panel">
+
+<h3>
+3.1 Concentration
+</h3>
+
+<p>
+
+Attention temporarily focuses on a single element.
+
+</p>
+
+<p>
+
+Concentration creates moments of clarity and hierarchy. The system briefly produces a center toward which perception converges.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<h3>
+3.2 Dispersion
+</h3>
+
+<p>
+
+Attention spreads across the various elements of the system.
+
+</p>
+
+<p>
+
+No single component dominates the visual field. Meaning becomes distributed and relational.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<h3>
+3.3 Reconfiguration
+</h3>
+
+<p>
+
+Attention creates new relational patterns that generate new meanings.
+
+</p>
+
+<p>
+
+The cultural experience emerges not from individual elements but from the recurring rhythm of concentration, dispersion and reconfiguration.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+4. Cultural Significance
+</h2>
+
+<div class="panel">
+
+<p>
+
+In modern culture, identity, power and visibility are increasingly less stable attributes.
+
+</p>
+
+<p>
+
+They are reproduced through the rhythm of attention.
+
+</p>
+
+<p>
+
+The decisive figure is not the one who merely possesses attention, but the one who is capable of organizing its movement.
+
+</p>
+
+<p>
+
+In this sense, modern cultural actors do not simply represent something.
+
+</p>
+
+<p style="font-size:1.7rem;color:#f3d46a;text-align:center;">
+
+They create environments of attention.
+
+</p>
+
+<p>
+
+Cultural power is therefore measured less by the quantity of presence and more by the ability to direct the rhythm of attention.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+Case Study I
+</h2>
+
+<div class="panel">
+
+<h3>
+Sonia Delaunay
+</h3>
+
+<p>
+
+The paintings of Sonia Delaunay demonstrate that visual rhythm can function as an organizing principle independent of narrative representation.
+
+</p>
+
+<p>
+
+Color fields do not merely occupy space. They interact, generate tension and compel the eye to move continuously across the composition.
+
+</p>
+
+<p>
+
+Meaning emerges not from any single form but from the relationships established between forms.
+
+</p>
+
+<p>
+
+In Delaunay's work, rhythm is not the subject of the image.
+
+</p>
+
+<p style="font-size:1.6rem;color:#f3d46a;text-align:center;">
+
+Rhythm is the structure of the image itself.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+Case Study II
+</h2>
+
+<div class="panel">
+
+<h3>
+Jacqueline Kennedy
+</h3>
+
+<p>
+
+Jacqueline Kennedy understood that modern political power possesses an atmosphere.
+
+</p>
+
+<p>
+
+The White House restoration project was not simply an exercise in interior design. It was an act of visual positioning and symbolic construction.
+
+</p>
+
+<p>
+
+Kennedy recognized that television culture transformed public perception into a visual environment that required deliberate organization.
+
+</p>
+
+<p>
+
+Rather than dominating public space, she controlled the perception of that space.
+
+</p>
+
+<p>
+
+Her communication strategy relied on rhythm, distance, scarcity and selective visibility.
+
+</p>
+
+<p>
+
+She did not merely communicate.
+
+</p>
+
+<p style="font-size:1.6rem;color:#f3d46a;text-align:center;">
+
+She organized the rhythm of attention.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+Case Study III
+</h2>
+
+<div class="panel">
+
+<h3>
+Alfred Hitchcock
+</h3>
+
+<p>
+
+Alfred Hitchcock transformed cinematic suspense into a system of attention management.
+
+</p>
+
+<p>
+
+His films are not organized primarily around action, but around the controlled distribution of information.
+
+</p>
+
+<p>
+
+The audience rarely sees everything at once.
+
+</p>
+
+<p>
+
+Information appears, disappears and returns in carefully structured sequences.
+
+</p>
+
+<p>
+
+Suspense emerges not from events themselves, but from the rhythm through which attention is guided.
+
+</p>
+
+<p>
+
+The viewer's perception becomes part of the composition.
+
+</p>
+
+<p>
+
+In this sense, Hitchcock did not simply direct films.
+
+</p>
+
+<p style="font-size:1.6rem;color:#f3d46a;text-align:center;">
+
+He directed attention.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+The Rosalía Principle
+</h2>
+
+<div class="panel">
+
+<p style="
+font-size:1.8rem;
+line-height:2;
+text-align:center;
+color:#f3d46a;
+">
+
+Meaning emerges through movement.
+
+</p>
+
+<p>
+
+The Rosalía Code proposes that cultural systems generate significance through the circulation of attention rather than through fixed centers.
+
+</p>
+
+<p>
+
+Attention gains intensity through movement, not fixation.
+
+</p>
+
+<p>
+
+The center remains present, but only as a temporary function within a larger field of relationships.
+
+</p>
+
+<p>
+
+Identity, authority, visibility and meaning become dynamic effects produced by rhythmic reconfiguration.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="overview">
+
+<div class="container">
+
+<h2 class="section-title">
+Conclusion
+</h2>
+
+<div class="panel">
+
+<p>
+
+The Rosalía Code is not a description of a performer, a choreography or a specific artistic movement.
+
+</p>
+
+<p>
+
+It is a model for understanding how meaning is produced within contemporary visual culture.
+
+</p>
+
+<p>
+
+Its central assumption is that modern systems of perception no longer depend on stable centers.
+
+</p>
+
+<p>
+
+They depend on movement.
+
+</p>
+
+<p>
+
+The center is no longer a position.
+
+</p>
+
+<p style="
+font-size:2rem;
+text-align:center;
+color:#f3d46a;
+margin-top:30px;
+margin-bottom:30px;
+">
+
+The center is movement.
+
+</p>
+
+<p>
+
+And meaning emerges from that movement.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer style="
+padding:100px 20px 60px;
+text-align:center;
+border-top:1px solid rgba(212,175,55,.15);
+margin-top:100px;
+">
+
+<div style="
+font-family:'Playfair Display',serif;
+font-size:2.4rem;
+color:#d4af37;
+margin-bottom:20px;
+">
+
+THE ROSALÍA CODE
+
+</div>
+
+<div style="
+font-size:1.2rem;
+line-height:2;
+color:#cfcfcf;
+max-width:900px;
+margin:auto;
+">
+
+A Cultural Theory of the Rhythmic Reconfiguration of Attention
+
+<br><br>
+
+Research Project
+
+<br>
+
+NVO987
+
+<br><br>
+
+Nicholas Van-Orton
+
+<br><br>
+
+© 2026
+
+<br>
+
+All Rights Reserved
+
+</div>
+
+</footer>
+
+</body>
+</html>
