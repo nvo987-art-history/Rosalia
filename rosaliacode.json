@@ -1,0 +1,25 @@
+{
+  "title": "The Rosalía Code",
+  "subtitle": "A Theory of Attention Architecture",
+  "author": "Nicholas Van-Orton",
+  "organization": "NVO987",
+  "published": "2026-06-10",
+  "version": "1.0",
+  "language": "en",
+  "website": "https://rosaliacode.nvo987.us",
+  "description": "The Rosalía Code is a cultural theory proposing that meaning emerges through the organization of attention rather than through stable centers of authority.",
+  "core_proposition": "Meaning is an effect produced by the organization of perception.",
+  "research_areas": [
+    "Attention Studies",
+    "Cultural Theory",
+    "Visual Culture",
+    "Media Theory",
+    "Symbolic Systems",
+    "Cultural Analysis"
+  ],
+  "status": "published",
+  "copyright": {
+    "holder": "Nicholas Van-Orton",
+    "year": 2026
+  }
+}
