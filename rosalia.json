@@ -1,0 +1,56 @@
+{
+  "name": "Rosalia Code",
+  "version": "1.0",
+  "title": "Rosalia Code White Paper",
+  "author": "Nicholas Van-Orton",
+  "date": "2026-06-14",
+
+  "core_thesis": "Meaning is an effect produced by the organization of perception.",
+
+  "definition": "Rosalia Code is a perception theory that examines how meaning emerges from the organization of visual, auditory, spatial and temporal elements within an experience.",
+
+  "origin": {
+    "artist": "Rosalia",
+    "medium": "Group Dance Performance",
+    "role": "Primary Case Study",
+    "observation": "The choreography functions as a perceptual system in which attention, movement, rhythm and spatial relations generate meaning."
+  },
+
+  "principles": [
+    {
+      "name": "Perceptual Organization",
+      "definition": "Meaning emerges from the structure of perception rather than from isolated elements."
+    },
+    {
+      "name": "Attention Guidance",
+      "definition": "The movement of attention determines how an experience is interpreted."
+    },
+    {
+      "name": "Relational Meaning",
+      "definition": "Meaning is produced by relationships between elements rather than by elements alone."
+    },
+    {
+      "name": "Experiential Construction",
+      "definition": "The observer participates in the creation of meaning through perception."
+    }
+  ],
+
+  "case_studies": [
+    {
+      "subject": "Rosalia",
+      "type": "Performance Analysis",
+      "focus": "Organization of Perception"
+    }
+  ],
+
+  "conclusion": {
+    "statement": "Meaning is not contained within objects themselves.",
+    "final_principle": "Meaning is an effect produced by the organization of perception."
+  },
+
+  "metadata": {
+    "website": "https://rosaliacode.nvo987.us",
+    "did": "did:web:identity.nvo987.us",
+    "contact": "nvo@nvo987.us"
+  }
+}
